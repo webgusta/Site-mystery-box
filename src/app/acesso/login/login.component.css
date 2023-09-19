@@ -1,0 +1,16 @@
+.card-title {
+    background-image: url("/assets/Logo2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    right: 250px;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+
+}
+

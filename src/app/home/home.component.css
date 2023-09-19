@@ -1,0 +1,22 @@
+.navbar {
+    height: 150px;
+    padding: 20px 40px;
+    width: 100%;
+    border-bottom: solid 1px #E6E6E6;
+    background-repeat: no-repeat;
+
+}
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  .descriçao{
+    text-align: left;
+    font-size: 17px; /* Tamanho desejado */
+  }
+  .top{
+    top:100px;
+    position:relative;
+  }

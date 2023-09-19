@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<!-- carrinho.component.html -->
+  <div class="container">
+    <div class="carrinho"> 
+      <h2>Carrinho de Compras</h2>
+    </div>
+    <div class="centralizar"> 
+    <div *ngIf="carrinhoItens.length > 0; else vazio">
+      <div *ngFor="let item of carrinhoItens">
+        <img [src]="'assets/' + item.imagem" alt="{{ item.nome }}" width="50" height="50">
+        <b><p>{{ item.nome }} - R$ {{ item.preco }}</p></b>
+        <button (click)="removerDoCarrinho(item)">Remover</button>
+      </div>
+      <b><p>Total da Compra: R$ {{ totalCompra }}</p></b> <!-- Exibir o total da compra -->
+      <a (click)="finalizarCompra()" routerLink="/formulario"> 
+        <button class="button2" >Finalizar Compra</button>  
+      </a>  <!-- Botão para finalizar a compra -->
+    </div>
+    <ng-template #vazio>
+      <p>O carrinho está vazio.</p>
+    </ng-template>
+  </div>
+</div>
+
+<app-footer></app-footer>

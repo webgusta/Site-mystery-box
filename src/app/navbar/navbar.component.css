@@ -1,0 +1,64 @@
+/* Estilos para a barra de navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    z-index: 1000; /* Garante que a navbar esteja acima de outros elementos */
+  }
+  
+  .logo img {
+    height: 150px;
+    width: 150px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #007bff;
+  }
+  .two h1 {
+    font-size:26px; 
+    font-weight:700; 
+    letter-spacing:1px; 
+    text-transform:uppercase; 
+    width:160px; 
+    text-align:center;
+     margin:auto; 
+     white-space:nowrap; 
+     padding-bottom:13px;
+  }
+  .two h1:before {
+      background-color: #037ffc;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .two h1:after {
+      background-color: #037ffc;
+      content: '';
+      display: block;
+      position:absolute; right:0; bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 0.25em;
+  }

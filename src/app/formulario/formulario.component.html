@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="centralizar"> 
+  <fieldset>
+    <legend>Formulário</legend>
+     <form (ngSubmit)="onSubmit()">
+
+  <div class="form-group ">
+    <label  class="form-label" for="nome">Nome:</label>
+    <input class="form-control textarea" type="text" id="nome" [(ngModel)]="formData.nome" name="nome" required placeholder="Digite seu nome">
+  </div>
+
+  <div class="form-group ">
+    <label  class="form-label" for="email">Email:</label>
+    <input class="form-control textarea" type="email" id="email" [(ngModel)]="formData.email" name="email" required placeholder="Digite seu email">
+  </div>
+
+  <div class="form-group ">
+    <label class="form-label" for="endereco">Endereço:</label>
+    <input class="form-control textarea" type="text" id="endereco" [(ngModel)]="formData.endereco" name="endereco"placeholder="Digite seu endereço">
+  </div>
+
+  <div class="form-group ">
+    <label class="form-label" for="telefone">Telefone:</label>
+    <input class="form-control textarea"type="text" id="telefone" [(ngModel)]="formData.telefone" name="telefone" placeholder="Digite seu telefone">
+  </div>
+  <a  routerLink="/home"> 
+  <button type="submit" class="button2">Enviar</button>
+  </a>
+
+ </form>
+</fieldset>
+</div>
+<app-footer></app-footer>

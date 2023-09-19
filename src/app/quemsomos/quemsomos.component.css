@@ -1,0 +1,9 @@
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.title{
+    margin-top: 100px;
+}
